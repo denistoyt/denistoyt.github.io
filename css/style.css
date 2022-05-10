@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Inter', sans-serif;
+}
+/* 
+    HEADER
+*/
+header {
+    width: 100%;
+    height: 100px;
+    background: url('../img/Header__Texture_Img.png') center / cover no-repeat #6CC880;
+    display: grid;
+    grid-template-columns: 65px auto;
+    align-items: center;
+    padding: 0 20px;
+}
+/* 
+    MAIN
+*/
+main {
+    width: 100%;
+    height: 870px;
+    background: url('../img/Mountains_Opacity.png') center 180px / cover no-repeat #E5E5E5;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.title-block {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 60px;
+}
+.slogan-desc {
+    margin-top: 41px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.5;
+}
+.deals-block p{
+    text-align: center;
+    font: 500 1.6em 'Inter', sans-serif;
+}
+.deals-desc {
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    font: 400 1em 'Inter', sans-serif;
+    text-align: center;
+}
+.deals-desc p {
+    font: 700 1.5em 'Inter',sans-serif;
+    margin-top: 30px;
+}
+/* 
+    FOOTER
+*/
+footer {
+    width: 100%;
+    height: 120%;
+    background: url('../img/Footer__Texture_Img.png') center / cover no-repeat #6CC880;
+}
+.address_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.address_container p {
+    text-transform: uppercase;
+    font: 400 24px 'Inter', sans-serif;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+footer ul {
+    text-align: center;
+    list-style-type: none;
+    margin-top: -40px;
+}
+footer ul li {
+    font: 400 24px 'Inter', sans-serif;
+    color: #fff;
+    letter-spacing: 1.2px;
+}
+
+
+/* -----------
+     MENU
+------------ */
+.menu {
+    position: relative;
+    margin: 0 24px;
+    transition: all .2s ease-in-out 0s;
+}
+.menu__list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 70px;
+}
+.menu__item {
+    margin: 0 12px;
+    color: #fff;
+    font: 400 20px 'Inter', sans-serif;
+}
+.menu__item:last-child {
+    margin-right: 0;
+}
+.menu__item:first-child {
+    margin-left: 0;
+}
+.menu__link {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 2px;
+    transition: all .15s ease-in-out 0s;
+    border-bottom: 2px solid transparent;
+}
+.menu__link:hover {
+    transition: all 0.4s ease;
+    color: #88ffa2;
+}
+.menu__icon {
+    position: relative;
+    width: 26px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+}
+.menu__icon::after,
+.menu__icon::before {
+    content: "";
+    transform-origin: left;
+}
+.menu__icon > span,
+.menu__icon::after,
+.menu__icon::before {
+    left: 0;
+    position: absolute;
+    background-color: #000;
+    display: block;
+    width: 100%;
+    height: 10%;
+    transition: all .15s ease-in-out 0s;
+}
+.menu__icon::after {
+    top: 0;
+}
+.menu__icon::before {
+    bottom: 0;
+}
+.menu__icon > span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menu__icon.active > span {
+    opacity: 0;
+    visibility: hidden;
+}
+.menu__icon.active::after {
+    transform: rotate(45deg);
+}
+.menu__icon.active::before {
+    transform: rotate(-45deg);
+}
+.menu__icon.active + .menu__body .menu__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.menu__icon.active + .menu__body .menu__item {
+    margin: 0;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #fff;
+}
+.menu__icon.active + .menu__body .menu__item:not(:last-child) {
+    margin-bottom: 6px;
+}
+.menu__icon.active + .menu__body .menu__link{
+    text-align: left;
+    white-space: nowrap;
+    color: #000;
+    
+}
+.menu__icon.active + .menu__body {
+    right: -50px;
+    top: 60px;
+    position: absolute;
+    min-width: 344px;
+    height: auto;
+    background-color: #74E393;
+    padding: 10px 0;
+}
