@@ -1,0 +1,77 @@
+<?
+    session_start();
+    require_once('connect.php');
+    require_once('logic.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icn/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/registr.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo-block">
+            <img src="/icn/Ural_Souvenir_Logo.png" alt="Souvenir-Logo" width="100%">
+        </div>
+        <div class="menu">
+            <div class="menu__icon">
+                <span></span>
+            </div>
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="production.html" class="menu__link">Продукция </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="quality.html" class="menu__link">Качество продукции</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="materials.html" class="menu__link">Материалы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="question.html" class="menu__link">Задать вопрос</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="about.html" class="menu__link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="login.html" class="menu__link">Войти</a> / 
+                        <a href="register.html" class="menu__link">Регистрация</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="profile.html" class="menu__link">Профиль</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <div class="question-block">
+            <section class="question-form-block">
+                <h2>Регистрация пользователя</h2>
+                <form action="" name="question-form" method="get" class="form">
+                    <div class="form-block">
+                        <p>Введите логин:</p>
+                        <input type="text" class="form-text-area" name='login_area'>
+                        <p>Придумайте пароль:</p>
+                        <input type="password" class="form-text-area" name='pass_area'>
+                        <p>E-mail:</p>
+                        <input type="text" class="form-text-area" name='email_area'>
+                    </div>
+                    <input type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ" class="form-subm-btn" name="subm-btn">
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>

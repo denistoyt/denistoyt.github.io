@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../icn/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <title>Вход</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo-block">
+            <img src="../icn/Ural_Souvenir_Logo.png" alt="Souvenir-Logo" width="100%">
+        </div>
+        <div class="menu">
+            <div class="menu__icon">
+                <span></span>
+            </div>
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="production.html" class="menu__link">Продукция </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="quality.html" class="menu__link">Качество продукции</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="materials.html" class="menu__link">Материалы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="question.html" class="menu__link">Задать вопрос</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="about.html" class="menu__link">О нас</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="login.html" class="menu__link">Войти</a> / 
+                        <a href="register.html" class="menu__link">Регистрация</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="profile.html" class="menu__link">Профиль</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <div class="question-block">
+            <section class="question-form-block">
+                <h2>ВХОД <br>
+                <a href="" style="font-size: 18px; color:#3c4b3f">Войти как админ</a></h2>
+                <form action="" name="question-form" method="get" class="form">
+                    <div class="form-block">
+                        <p>Логин:</p>
+                        <input type="text" name='login' class="form-text-area" required >
+                        <p>Пароль:</p>
+                        <input type="password" name='pass' class="form-text-area" required > 
+                    </div>
+                    <input type="submit" value="ВОЙТИ" name="login_btn" class="form-subm-btn">
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="../js/index.js"></script>
+</body>
+</html>

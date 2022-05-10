@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Inter', sans-serif;
+}
+/* 
+    HEADER
+*/
+header {
+    width: 100%;
+    height: 100px;
+    background: url('../../img/Header__Texture_Img.png') center / cover no-repeat #6CC880;
+    display: grid;
+    grid-template-columns: 75px auto;
+    align-items: center;
+    padding: 0 20px;
+}
+.menu-block ul {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    column-gap: 120px;
+    font: 400 1.4em 'Inter', sans-serif;
+    color: #fff;
+}
+.menu-block a {
+    color: #fff;
+}
+/* Hovers */
+.logo-block img:hover {
+    transition: all 0.2s ease-in-out;
+    width: 70px;
+}
+.menu-block a:hover {
+    transition: all 0.4s ease-in-out;
+    color: #88ffa2;
+}
+/* 
+    MAIN
+*/
+main {
+    width: 100%;
+    height: 1071px;
+    background: url('../../img/Mountains_Opacity.png') center 180px / cover no-repeat #E5E5E5;
+    padding: 60px 20px;
+}
+.profile-main-block {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 0.2px solid black;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px grey;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    align-items: center;
+}
+.profile-data-container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 520px auto;
+    column-gap: 20px;
+    text-align: center;
+    font: 500 24px 'Inter', sans-serif;
+    margin-top: 20px;
+}
+.insert {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    background: rgba(136, 255, 162, 0.5);
+    border-radius: 10px;
+    border: 0.2px solid grey;
+    box-shadow: 0 10px 8px grey;
+}
+.insert-form-block {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+.insert-form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8 ,1fr);
+    row-gap: 10px;
+    align-items: center;
+}
+.insert-form textarea {
+    resize: none;
+    border: 0.2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    font: 500 20px 'Inter', sans-serif;
+    width: 100%;
+    height: 80px;
+} 
+.insert-form input {
+    width: 100%;
+    height: 40px;
+    border: 0.2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    font: 500 24px 'Inter', sans-serif;
+}
+.insert-btn {
+    background: #88ffa2;
+}
+.insert-btn:hover {
+    transition: all 0.4s ease;
+    background: #6CC880;
+    cursor: pointer;
+}
+.edit {
+    width: 100%;
+    padding: 10px;
+    background: rgba(108, 200, 128, 0.5);
+    border-radius: 10px;
+    border: 0.2px solid grey;
+    box-shadow: 0 10px 8px grey;
+}
+.edit-table {
+    border: 1px dotted black;
+}
+td, th {
+    border: 2px solid grey;
+}
+.edit-icn {
+    width: 27px;
+}
+.edit-icn:hover {
+    transition: all 0.6s ease;
+    content: url('../../icn/editing_hover.png');width: 37px;
+}
+.edit-form input {
+    width: 100%;
+    height: 40px;
+    border: 0.2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    font: 500 24px 'Inter', sans-serif;
+}
+.edit-form textarea {
+    resize: none;
+    border: 0.2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    font: 500 20px 'Inter', sans-serif;
+    width: 100%;
+    height: 50px;
+}
+.edit_save-btn {
+    background: rgb(108, 200, 128);
+}
+.edit_save-btn:hover {
+    transition: all 0.4s ease;
+    background: rgb(136, 255, 162);
+    cursor: pointer;
+}
+.inputs {
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    row-gap: 10px;
+}
+.delete {
+    width: 100%;
+    background: green;
+    padding: 10px;
+}
+.delete-icn {
+    width: 27px;
+}
+.delete-icn:hover {
+    transition: all 0.6s ease;
+    content: url('../../icn/delete_hover.png');
+    width: 37px;
+}
+
